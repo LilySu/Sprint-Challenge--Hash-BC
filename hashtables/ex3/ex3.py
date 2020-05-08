@@ -20,7 +20,11 @@ def intersection(arrays):
     # for i in hash_dict:
     #     if hash_dict[i] == len(arrays):
     #         new_list.append(i)
-    return [i for i in hash_dict if hash_dict[i] == len(arrays)]
+    result = []
+    for i in hash_dict:
+        if hash_dict[i] == len(arrays):
+            result.append(i)
+    return result
     # for i in range(len(arrays)):
     #     if hash_dict[i] == len(arrays):
     #         result = i
